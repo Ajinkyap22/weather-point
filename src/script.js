@@ -29,7 +29,7 @@ class App {
   async fetchData(cityName) {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=${
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=${
           this.#apiKey
         }`
       );
@@ -110,7 +110,7 @@ class DOM {
     humidityLabel.textContent = data.humidity;
     windLabel.textContent = data.wind;
     descLabel.textContent = data.description;
-    icon.style.backgroundImage = `url(http://openweathermap.org/img/wn/${data.icon}@2x.png)`;
+    icon.style.backgroundImage = `url(https://openweathermap.org/img/wn/${data.icon}@2x.png)`;
 
     weatherDiv.classList.remove("hidden");
 

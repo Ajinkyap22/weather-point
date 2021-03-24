@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather Point</title>
+    <meta name="description" content="" />
+    <link rel="icon" href="./images/title-icon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Weather Point</h1>
+      </header>
+      <form class="input">
+        <input type="text" id="city" placeholder="Enter a location" required />
+        <button class="btn submit">Search</button>
+      </form>
+      <div class="weather hidden">
+        <label class="city__name"><span></span> </label>
+        <label class="time">As of <span></span></label>
+        <label class="temp"
+          ><span class="temp__label"></span> <sup id="C" class="active">°C|</sup
+          ><sup id="F">°F</sup></label
+        >
+        <div>
+          <div class="icon"></div>
+          <label class="desc"></label>
+        </div>
+        <label class="humidity">Humidity: <span></span>%</label>
+        <label class="wind">Wind: <span></span> m/s</label>
+      </div>
+      <div class="error__label"></div>
+    </div>
+    <footer>
+      <p>
+        Built by
+        <a href="https://github.com/Ajinkyap22" target="_blank"
+          >Ajinkya Palaskar</a
+        >
+        |
+        <a href="https://github.com/Ajinkyap22/weather-point" target="_blank"
+          >Source code</a
+        >
+      </p>
+    </footer>
+    <script src="main.js" async defer></script>
+  </body>
+</html>

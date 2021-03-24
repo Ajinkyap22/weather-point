@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: #202020;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 10px;
+}
+
+.container {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.input > * {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.weather {
+  font-size: 18px;
+  border: 2px solid white;
+  width: 30%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+}
+
+.weather > * {
+  padding: 10px;
+}
+
+.city__name {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: 4rem;
+  background-position: center;
+  padding: 20px;
+}
+
+.temp {
+  font-size: 3rem;
+}
+
+.temp > sup {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: darkgrey;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.temp .active {
+  color: white;
+}
+
+.error__label {
+  font-size: 20px;
+}
+
+.veryHot {
+  background: linear-gradient(#b02e0c, #eb4511);
+}
+
+.hot {
+  background: linear-gradient(#ffcc2f, #ef5734);
+}
+
+.warm {
+  background: linear-gradient(#98de5b, #08e1ae);
+}
+
+.cool {
+  background: linear-gradient(#09c6f9, #045de9);
+}
+
+.cold {
+  background: linear-gradient(#009ffd, #2a2a72);
+}
+
+.freezing {
+  background: linear-gradient(#0d324d, #7f5a83);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  font-size: 14px;
+  padding: 5px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #202020;
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: orangered;
+}
+
+@media only screen and (max-width: 868px) {
+  .weather {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .input {
+    padding: 0px;
+  }
+
+  .input input {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .weather {
+    width: 70%;
+  }
+
+  .city__name {
+    font-size: 1.8rem;
+  }
+
+  .icon {
+    background-size: 3rem;
+  }
+
+  .temp {
+    font-size: 2.5rem;
+  }
+
+  .temp > sup {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .weather {
+    width: 90%;
+  }
+}

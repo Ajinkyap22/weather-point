@@ -1,5 +1,7 @@
 "use strict";
 
+import { apiKey } from "./config";
+
 // DOM Elements
 
 const weatherDiv = document.querySelector(".weather");
@@ -23,15 +25,12 @@ const errorLabel = document.querySelector(".error__label");
 // Classes
 
 class App {
-  #apiKey = "59328a6ad74fe296d4aa2360b4141241";
   weather;
 
   async fetchData(cityName) {
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=${
-          this.#apiKey
-        }`
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=${apiKey}`
       );
 
       return response;
